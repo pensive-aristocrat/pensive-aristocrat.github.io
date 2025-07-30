@@ -2,7 +2,7 @@
 title: "dolphin: A fully automated forward modeling pipeline powered by artificial intelligence for galaxy-scale strong lenses"
 collection: publications
 category: manuscripts
-permalink: /publication/dolphin2025
+permalink: https://arxiv.org/abs/2503.22657
 excerpt: #'This paper is about the number 1. The number 2 is left for future work.'
 date: 2025-03-28
 venue: #'Journal 1'
