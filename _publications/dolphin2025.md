@@ -4,7 +4,7 @@ collection: publications
 category: manuscripts
 permalink: /publication/dolphin2025
 excerpt: #'This paper is about the number 1. The number 2 is left for future work.'
-date: 2025-03-28
+date: 2025-28-03
 venue: #'Journal 1'
 slidesurl: #'http://pensive-aristocrat.github.io/files/slides1.pdf'
 paperurl: 'http://pensive-aristocrat.github.io/files/2503.22657v1.pdf'
