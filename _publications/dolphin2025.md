@@ -2,9 +2,9 @@
 title: "dolphin: A fully automated forward modeling pipeline powered by artificial intelligence for galaxy-scale strong lenses"
 collection: publications
 category: manuscripts
-permalink: https://arxiv.org/abs/2503.22657
+permalink: "https://arxiv.org/abs/2503.22657"
 excerpt: #'This paper is about the number 1. The number 2 is left for future work.'
-date: 2025-03-28
+date: 2025-28-03
 venue: #'Journal 1'
 slidesurl: #'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'http://pensive-aristocrat.github.io/files/2503.22657v1.pdf'
