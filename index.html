@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nafis Sadik Nihal</title>
+    <style>
+    .education-item {
+    margin-bottom: 2rem;
+}
+
+.education-item h3 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.education-item p {
+    font-size: 0.95rem;
+    color: #d0ceca;
+    margin-bottom: 0.3rem;
+}
+
+
+
+    .about-flex {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap; /* allows it to be responsive on smaller screens */
+}
+
+.about-image img {
+    max-width: 250px;
+    width: 100%;
+    border-radius: 8px; /* optional rounded corners */
+    object-fit: cover;
+}
+
+.about-text {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .about-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .about-image img {
+        max-width: 200px;
+    }
+}
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.8;
+            color: #e8e6e3;
+            background: #0a0e27;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(2px 2px at 20% 30%, white, transparent),
+                radial-gradient(2px 2px at 60% 70%, white, transparent),
+                radial-gradient(1px 1px at 50% 50%, white, transparent),
+                radial-gradient(1px 1px at 80% 10%, white, transparent),
+                radial-gradient(2px 2px at 90% 60%, white, transparent),
+                radial-gradient(1px 1px at 33% 80%, white, transparent),
+                radial-gradient(1px 1px at 15% 75%, white, transparent);
+            background-size: 200% 200%;
+            opacity: 0.4;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        header {
+            padding: 6rem 0 4rem;
+            text-align: center;
+            border-bottom: 1px solid rgba(232, 230, 227, 0.15);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #b0aead;
+            font-weight: 300;
+        }
+
+        nav {
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 1px solid rgba(232, 230, 227, 0.15);
+        }
+
+        nav a {
+            color: #b0aead;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-size: 0.95rem;
+            letter-spacing: 0.05em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        section {
+            padding: 4rem 0;
+            border-bottom: 1px solid rgba(232, 230, 227, 0.15);
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            color: #d0ceca;
+        }
+
+        .research-item {
+            margin-bottom: 2.5rem;
+        }
+
+        .research-item h3 {
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+        }
+
+        .publication {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(232, 230, 227, 0.1);
+        }
+
+        .publication:last-child {
+            border-bottom: none;
+        }
+
+        .publication h3 {
+            font-size: 1rem;
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+        }
+
+        .publication p {
+            font-size: 0.9rem;
+            color: #b0aead;
+            margin-bottom: 0.3rem;
+        }
+
+        .publication a {
+            color: #8896ab;
+            text-decoration: none;
+            font-size: 0.85rem;
+            margin-right: 1rem;
+        }
+
+        .publication a:hover {
+            color: #ffffff;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .contact-item h3 {
+            font-size: 0.9rem;
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+            color: #b0aead;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .contact-item p {
+            font-size: 0.95rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .contact-item a {
+            color: #8896ab;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            color: #ffffff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 0;
+            font-size: 0.85rem;
+            color: #6a6866;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+
+            .container {
+                padding: 0 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Nafis Sadik Nihal</h1>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#publications">Publications</a>
+            <a href="#Outreach">Outreach</a>
+            <a href="#contact">Contact</a>
+            <a href="#CV">CV</a>
+        </div>
+    </nav>
+
+
+
+    <section id="about">
+    <div class="container about-flex">
+        <div class="about-text">
+            <h2>About</h2>
+            <p>I am a Research Assistant at the Center for Astronomy, Space Science and Astrophysics, Independent University, Bangladesh. My work focuses on the modeling of strong gravitational lensing systems and the development of computational tools for the astronomical community.</p>
+            <p>I am particularly interested in applying machine learning techniques to cosmological problems, bridging simulations and observational data for scalable scientific analysis.</p>
+        </div>
+        <div class="about-image">
+            <img src="NafisSadikNihal.jpg" alt="Nafis Sadik Nihal">
+        </div>
+    </div>
+</section>
+
+<section id="education">
+    <div class="container">
+        <h2>Education</h2>
+        <div class="education-item">
+            <h3>Bachelor of Science — Electrical and Electronic Engineering</h3>
+            <p><strong>Institution:</strong> Islamic University of Technology, Gazipur, Bangladesh</p>
+            <p><strong>Year:</strong> 2022</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+    <section id="publications">
+        <div class="container">
+            <h2>Publications</h2>
+            
+<div class="publication">
+    <h3>DOLPHIN: An Artificially Intelligent Lens Modeler</h3>
+    <p>Authors: Anowar J. Shajib, <b>Nafis Sadik Nihal</b>, Chin Yi Tan, Vedant Sahu, Simon Birrer, Tommaso Treu, and Joshua Frieman</p>
+    <p>The Astrophysical Journal, Volume 992, Number 1, Published 2025 October 3</p>
+    <a href="https://iopscience.iop.org/article/10.3847/1538-4357/adf95c" target="_blank">Read Paper (IOP)</a>
+    <a href="https://doi.org/10.3847/1538-4357/adf95c" target="_blank">DOI</a>
+</div>
+
+
+
+    </section>
+
+ <section id="Outreach">
+    <div class="container">
+        <h2>Outreach</h2>
+
+        <div class="outreach-item">
+            <h3>Presenter — Journal Talk</h3>
+            <p><strong>July 2025</strong><br>
+            <em>DOLPHIN:</em> A fully automated forward modeling pipeline powered by artificial intelligence for galaxy-scale strong lenses.</p>
+        </div>
+
+        <div class="outreach-item">
+            <h3>Team Draco — International Astronomical Search Collaboration</h3>
+            <p><strong>May 2024</strong><br>
+            Contributor to the NASA-supported Pan-STARRS Project.</p>
+        </div>
+
+        <div class="outreach-item">
+            <h3>Speaker — Coding & Typesetting Workshop</h3>
+            <p><strong>October 2023</strong><br>
+            Delivered a talk on <em>“Basics of Performing Calculus and Modeling Problems in MATLAB”</em> and an introduction to MATLAB and LaTeX.<br>
+            Event organized by the Symmetry: Club of Physical Sciences, Independent University, Bangladesh.</p>
+        </div>
+
+    </div>
+</section>
+ 
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p><a href="mailto:nafissadik7@iut-dhaka.edu">nafissadik7@iut-dhaka.edu</a></p>
+                    <p><a href="mailto:nafissadiknihal@gmail.com">nafissadiknihal@gmail.com</a></p>
+
+                </div>
+<div class="contact-item">
+    <h3>Address</h3>
+    <p>
+        Green Road · Dhaka · Bangladesh · Asia · Earth · Solar System · Milky Way · Local Group · Laniakea Supercluster · Observable Universe
+    </p>
+</div>
+
+                <div class="contact-item">
+                    <h3>Links</h3>
+                    <p><a href="https://arxiv.org/search/astro-ph?searchtype=author&query=Nihal,+N+S">arXiv</a></p>
+                    <p><a href="https://github.com/pensive-aristocrat">GitHub</a></p>
+                    <p><a href="https://scholar.google.com/citations?user=fYpVDpgAAAAJ&hl=en">Google Scholar</a></p>
+                    <p><a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Nihal%2C%20Nafis%20Sadik%22&sort=date%20desc%2C%20bibcode%20desc&p_=0">NASA ADS</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Nafis Sadik Nihal</p>
+        </div>
+    </footer>
+</body>
+</html>
